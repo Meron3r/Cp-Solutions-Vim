@@ -1,1 +1,2 @@
 *.exe
+Problemset/node_modules/.bin/ci
