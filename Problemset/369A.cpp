@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+#define debug cout << "I was here!" << '\n'
+#define all(a) a.begin(), a.end()
+
+typedef unsigned u;
+typedef long long ll;
+
+void solve()
+{
+    int n, m, k; cin >> n >> m >> k;
+    
+    vector<int> a(n);
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
+    
+    int ans = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i] == 1)
+        {
+            if (m > 0) m--;
+            else ans++;
+        }
+
+        else
+        {
+            if (k > 0) k--;
+            else if (m > 0) m--;
+            else ans++;
+        }
+    }
+
+    cout << ans << '\n';
+}
+
+int main()
+{
+    int t = 1; //cin >> t;
+    while (t--) solve();
+
+    return 0;
+}
