@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <iostream>
 
 using namespace std;
 
@@ -11,9 +10,10 @@ typedef long long ll;
 
 void solve()
 {
-    int x, y; cin >> x >> y;
-
-    cout << max((y + 1) / 2, (4 * y + x + 14) / 15) << '\n';
+    int a, b; cin >> a >> b;
+    
+    int ans = a ^ b;
+    cout << ans << '\n';
 }
 
 int main()
@@ -23,3 +23,4 @@ int main()
 
     return 0;
 }
+

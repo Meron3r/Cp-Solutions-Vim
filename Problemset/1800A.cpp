@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include <iostream>
+#include <cstdint>
 
 using namespace std;
 
@@ -11,9 +11,14 @@ typedef long long ll;
 
 void solve()
 {
-    int x, y; cin >> x >> y;
+    int n; cin >> n;
+    string a; cin >> a;
+        
+    for (int i = 0; i < n; i++)
+        a[i] = tolower(a[i]);
+    a.erase(unique(all(a)), a.end());
 
-    cout << max((y + 1) / 2, (4 * y + x + 14) / 15) << '\n';
+    cout << (a == "meow" ? "YES" : "NO") << '\n';
 }
 
 int main()

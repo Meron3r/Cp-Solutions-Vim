@@ -19,7 +19,7 @@ void solve()
         else
             even.insert(s[i]);
     }
-
+    
     for (auto it = odd.begin(); it != odd.end(); ++it)
     {
         if(find(all(even), *it) != even.end()) 
