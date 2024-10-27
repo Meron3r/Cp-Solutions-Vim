@@ -11,7 +11,7 @@ typedef long long ll;
 void solve()
 {
     int n; cin >> n;
-
+    
     vector<int> a;
     for(int i = 1 ; i <= 26 ; i++) 
         a.push_back(i);
